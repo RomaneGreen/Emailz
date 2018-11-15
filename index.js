@@ -5,23 +5,28 @@ const keys = require('./config/keys');
 const app  = express();
 
 passport.use(
-    new GoogleStrategy({
+    new GoogleStrategy(
+    {
     clientID: keys.googleClientID,
     clientSecret:keys.googleClientSecret,
-    callbackUrl: '/auth/google/callback'
-}, (accessToken) => {
-    console.log(accessToken);
+    callbackURL: '/auth/google/callback'
+}, (accessToken, refreshToken, profile, done) => {
+    console.log('access Token', accessToken);
+    console.log('refreshToken', refreshToken);
+    console.log('profile:', profile);
   }
  )
 );
 
 
-app.get('/auth/google', passport.authenticate('google', {
+app.get(
+    '/auth/google',
+    passport.authenticate('google', {
     scope: ['profile', 'email']
-})
+ })
 );
 
-
+app.get('/auth/google/callback', passport.authenticate('google'));
 
 
 const PORT = process.env.PORT || 5000;
