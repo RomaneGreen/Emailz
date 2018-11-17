@@ -9,4 +9,4 @@ const recipientSchema = new Schema({
 
 });
 
-module.export = recipientSchema;
+module.exports = recipientSchema;

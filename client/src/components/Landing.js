@@ -8,10 +8,10 @@ const Landing = () => {
         <h1>
         Emaily!
         </h1>
-        Collect feeback from your users!
+        Collect feeback frm your users!
         </div>
     );
-}
+};
 
 
 

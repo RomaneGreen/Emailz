@@ -7,7 +7,7 @@ import Payments from './Payments'
         renderContent() {
             switch (this.props.auth){
                 case null:
-                return <li><a href="/auth/google">Login with Google</a></li>;
+                return;
                 case false:
                 return <li><a href="/auth/google">Login with Google</a></li>;
                 default:
