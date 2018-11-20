@@ -1,7 +1,7 @@
 // logic to render label and text
 import React from 'react';
 
-export default ({ input,label }) => {
+export default ({ input,label,meta:{ error, touched } }) => {
 
     return (
         <div>
@@ -9,6 +9,7 @@ export default ({ input,label }) => {
         {label}
         </label>
         <input {...input} />
+        { touched && error}
         </div>
     );
 };
