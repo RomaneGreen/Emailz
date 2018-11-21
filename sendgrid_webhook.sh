@@ -1,6 +1,6 @@
 
 function localtunnel {
-    lt -s lairjgglairgli --port 5000
+    lt -s vsvrevrff --port 5000
 }
 
 until localtunnel; do
