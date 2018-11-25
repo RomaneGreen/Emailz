@@ -14,7 +14,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run webhook\" ",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
     "webhook": " lt -p 5000 -s clever-dingo-61 ",
-    "webhooked": "ssh -R yourRandomSubdomainName:80:localhost:5000 serveo.net"
+    "webhooked": "ssh -R aRandomSubdomainName:80:localhost:5000 serveo.net"
   },
   "author": "",
   "license": "ISC",
