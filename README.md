@@ -1,2 +1,4 @@
 # Emailz
-node proj
+
+
+Front end for email services project.
