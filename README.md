@@ -1,4 +1,4 @@
 # Emailz
 
 
-Front end for email services project.
+Email services project.Uses React,Redux,node+express server.
